@@ -27,8 +27,7 @@ namespace TikTokToGame
             Console.WriteLine("----------------------------");
             Console.WriteLine("{0}\t|{1}\t|{2}", position[6], position[7], position[8]);
         }
-
-        public void tekInput()
+        public void takeInput()
         {
             char a2 = 'l';
             char a = 'l';
@@ -61,8 +60,7 @@ namespace TikTokToGame
                         }
                     }
                     else if (player == 2)
-                    {
-                        
+                    {                       
                         if (a2 == 'l')
                         {
                             Console.WriteLine("Select second player choice X or O");
