@@ -27,7 +27,7 @@ namespace TikTokToGame
                 {
                     if (player == 1)
                     {
-                        Console.WriteLine("Select your choice");
+                        Console.WriteLine("Select your choice X or O");
                         char a = char.Parse(Console.ReadLine());
 
                         Console.WriteLine("Play First plauer");
@@ -40,7 +40,7 @@ namespace TikTokToGame
                     }
                     else if (player == 2)
                     {
-                        Console.WriteLine("Select your choice");
+                        Console.WriteLine("Select your choice X or O");
                         char a = char.Parse(Console.ReadLine());
 
                         Console.WriteLine("Play First plauer");
