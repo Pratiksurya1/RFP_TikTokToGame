@@ -8,49 +8,83 @@ namespace TikTokToGame
 {
     internal class TikTakTo_Bord
     {
-        char[] arr = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9' };
+        char[] position = new char[10];
+
+
         public void TikTakToBord()
         {
-            Console.WriteLine("{0}\t|{1}\t|{2}",arr[1],arr[2],arr[3]);
+            //for (int i = 0; i < position.Length; i++)
+            //{
+            //    if (i == 0)
+            //    {
+            //        continue;
+            //    }
+            //    position[i] = ' ';
+            //}
+            Console.WriteLine("{0}\t|{1}\t|{2}", position[0], position[1], position[2]);
             Console.WriteLine("----------------------------");
-            Console.WriteLine("{0}\t|{1}\t|{2}",arr[4],arr[5],arr[6]);
+            Console.WriteLine("{0}\t|{1}\t|{2}", position[3], position[4], position[5]);
             Console.WriteLine("----------------------------");
-            Console.WriteLine("{0}\t|{1}\t|{2}",arr[7],arr[8],arr[9]);
+            Console.WriteLine("{0}\t|{1}\t|{2}", position[6], position[7], position[8]);
         }
 
         public void tekInput()
         {
+            char a2 = 'l';
+            char a = 'l';
+            int count = 0;
             int player = 1;
-            if (arr != null)
+            if (position != null)
             {
                 while (true)
                 {
                     if (player == 1)
                     {
-                        Console.WriteLine("Select your choice X or O");
-                        char a = char.Parse(Console.ReadLine());
-
-                        Console.WriteLine("Play First plauer");
-                        int dis = Int32.Parse(Console.ReadLine());
-                        if (arr[dis] != 'X' && arr[dis] != 'O')
+                        
+                        if (a == 'l')
                         {
-                            arr[dis] = a;
+                            Console.WriteLine("Select first player choice X or O");
+                            a = char.Parse(Console.ReadLine());
+                        }
+
+                        Console.WriteLine("Play First plauer your mark is "+a);
+                        int dis = Int32.Parse(Console.ReadLine());
+                        if (position[dis] != 'X' && position[dis] != 'O')
+                        {
+                            position[dis] = a;
+                            TikTakToBord();
                             player = 2;
+                        }
+                        else
+                        {
+                            Console.WriteLine("this position have " + position[dis]);
                         }
                     }
                     else if (player == 2)
                     {
-                        Console.WriteLine("Select your choice X or O");
-                        char a = char.Parse(Console.ReadLine());
-
-                        Console.WriteLine("Play First plauer");
-                        int di = Int32.Parse(Console.ReadLine());
-                        if (arr[di] != 'X' && arr[di] != 'O')
+                        
+                        if (a2 == 'l')
                         {
-                            arr[di] = a;
+                            Console.WriteLine("Select second player choice X or O");
+                            a2 = char.Parse(Console.ReadLine());
+                        }
+
+                        Console.WriteLine("Play second plauer your mark is "+a2);
+                        int di = Int32.Parse(Console.ReadLine());
+                        if (position[di] != 'X' && position[di] != 'O')
+                        {
+                            position[di] = a2;
+                            TikTakToBord();
                             player = 1;
                         }
+                        else
+                        {
+                            Console.WriteLine("this position have "+position[di]);
+                        }
                     }
+                    count++;
+                    if(count==9)
+                        break;
                 }
             }
 
