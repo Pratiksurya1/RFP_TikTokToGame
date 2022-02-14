@@ -33,24 +33,26 @@ namespace TikTokToGame
             int player = 1;
             if (arr != null)
             {
-                Console.WriteLine("Select your choice");
-                char a = char.Parse(Console.ReadLine());
-
                 while (true)
                 {
                     if (player == 1)
                     {
+                        Console.WriteLine("Select your choice");
+                        char a = char.Parse(Console.ReadLine());
+
                         Console.WriteLine("Play First plauer");
                         int dis = Int32.Parse(Console.ReadLine());
                         if (arr[dis] != 'X' && arr[dis] != 'O')
                         {
-
                             arr[dis] = a;
                             player = 2;
                         }
                     }
                     else if (player == 2)
                     {
+                        Console.WriteLine("Select your choice");
+                        char a = char.Parse(Console.ReadLine());
+
                         Console.WriteLine("Play First plauer");
                         int di = Int32.Parse(Console.ReadLine());
                         if (arr[di] != 'X' && arr[di] != 'O')
