@@ -1,0 +1,15 @@
+D:\.Net\C#\TikTokToGame\bin\Debug\net6.0\TikTokToGame.exe
+D:\.Net\C#\TikTokToGame\bin\Debug\net6.0\TikTokToGame.deps.json
+D:\.Net\C#\TikTokToGame\bin\Debug\net6.0\TikTokToGame.runtimeconfig.json
+D:\.Net\C#\TikTokToGame\bin\Debug\net6.0\TikTokToGame.dll
+D:\.Net\C#\TikTokToGame\bin\Debug\net6.0\ref\TikTokToGame.dll
+D:\.Net\C#\TikTokToGame\bin\Debug\net6.0\TikTokToGame.pdb
+D:\.Net\C#\TikTokToGame\obj\Debug\net6.0\TikTokToGame.csproj.AssemblyReference.cache
+D:\.Net\C#\TikTokToGame\obj\Debug\net6.0\TikTokToGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\.Net\C#\TikTokToGame\obj\Debug\net6.0\TikTokToGame.AssemblyInfoInputs.cache
+D:\.Net\C#\TikTokToGame\obj\Debug\net6.0\TikTokToGame.AssemblyInfo.cs
+D:\.Net\C#\TikTokToGame\obj\Debug\net6.0\TikTokToGame.csproj.CoreCompileInputs.cache
+D:\.Net\C#\TikTokToGame\obj\Debug\net6.0\TikTokToGame.dll
+D:\.Net\C#\TikTokToGame\obj\Debug\net6.0\ref\TikTokToGame.dll
+D:\.Net\C#\TikTokToGame\obj\Debug\net6.0\TikTokToGame.pdb
+D:\.Net\C#\TikTokToGame\obj\Debug\net6.0\TikTokToGame.genruntimeconfig.cache
