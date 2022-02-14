@@ -31,20 +31,23 @@ namespace TikTokToGame
         public void tekInput()
         {
             int player = 1;
-
-            Console.WriteLine("Select your choice");
-            char a = char.Parse(Console.ReadLine());
-            while (true)
+            if (arr != null)
             {
-                if (player == 1)
-                {
-                    Console.WriteLine("Play First plauer");
-                    int dis = Int32.Parse(Console.ReadLine());
-                    if (arr[dis] != 'X' && arr[dis] != 'O')
-                    {
+                Console.WriteLine("Select your choice");
+                char a = char.Parse(Console.ReadLine());
 
-                        arr[dis] = a;
-                        player = 2;
+                while (true)
+                {
+                    if (player == 1)
+                    {
+                        Console.WriteLine("Play First plauer");
+                        int dis = Int32.Parse(Console.ReadLine());
+                        if (arr[dis] != 'X' && arr[dis] != 'O')
+                        {
+
+                            arr[dis] = a;
+                            player = 2;
+                        }
                     }
                     else if (player == 2)
                     {
@@ -52,11 +55,9 @@ namespace TikTokToGame
                         int di = Int32.Parse(Console.ReadLine());
                         if (arr[di] != 'X' && arr[di] != 'O')
                         {
-
                             arr[di] = a;
                             player = 1;
                         }
-
                     }
                 }
             }
