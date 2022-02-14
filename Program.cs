@@ -12,6 +12,7 @@ namespace TikTokToGame
         {
             TikTakTo_Bord tikTakTo=new TikTakTo_Bord();
             tikTakTo.TikTakToBord();
+            tikTakTo.tekInput();
         }
     }
 }
